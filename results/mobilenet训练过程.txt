@@ -1,0 +1,127 @@
+D:\Anaconda3\envs\dejahu\python.exe E:/Desktop/vegetables_tf2.3-master/vegetables_tf2.3-master/train_mobilenet.py
+Found 1345 files belonging to 96 classes.
+2023-10-03 22:06:52.029433: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-03 22:06:52.035489: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x258c2dc57e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-10-03 22:06:52.035605: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Found 360 files belonging to 96 classes.
+['ActiasDubernardiOberthur', 'ActiasSeleneNingpoanaFelder', 'AgriusConvolvuli', 'AmsactaLactinea', 'AnoplophoraChinensisForster', 'AnoplophoraGlabripennisMotschulsky', 'AprionaGermari', 'AprionaSwainsoni', 'AromiaBungiiFald', 'AtaturaIlia', 'BatoceraHorsfieldiHope', 'ByasaAlcinousKlug', 'CalospilosSuspectaWarren', 'CamptolomaInteriorata', 'CarposinaNiponensisWalsingham', 'CatharsiusMolossusLinnaeus', 'CeruraMencianaMoore', 'ChalcophoraJaponica', 'CicadellaViridis', 'ClanisBilineata', 'CletusPunctigerDallas', 'ClosteraAnachoreta', 'ClosteraAnastomosis', 'ConogethesPunctiferalis', 'CorythuchaCiliata', 'CreatonotusTransiens', 'CryptotympanaAtrataFabricius', 'CyclidiaSubstigmariaSubstigmaria', 'CyclopeltaObscura', 'CystidiaCouaggariaGuenee', 'DanausChrysippusLinnaeus', 'DanausGenutia', 'DasychiraGroteiMoore', 'DendrolimusPunctatusWalker', 'DiaphaniaPerspectalis', 'DicranocephalusWallichi', 'DictyopharaSinica', 'DorcusTitanusPlatymelus', 'DrosichaCorpulenta', 'EligmaNarcissus', 'EnmonodiaVespertiliFabricius', 'ErthesinaFullo', 'EuricaniaClara', 'EurydemaDominulus', 'GeishaDistinctissima', 'GraphiumSarpedonLinnaeue', 'GraphosomaRubrolineata', 'HalyomorphaPicusFabricius', 'HestinaAssimilis', 'HistiaRhodopeCramer', 'HyphantriaCunea', 'JacobiascaFormosana', 'LatoriaConsociaWalker', 'LethocerusDeyrolliVuillefroy', 'LocastraMuscosalisWalker', 'LycormaDelicatula', 'MegopisSinicaSinicaWhite', 'MeimunaMongolica', 'MicromelalophaTroglodyta', 'MiltochristaStriata', 'MonochamusAlternatusHope', 'Ophthalmitisirrorataria', 'OrthagaAchatina', 'PapilioBianorCramer', 'PapilioMachaonLinnaeus', 'PapilioPolytesLinnaeus', 'PapilioProtenorCramer', 'PapilioXuthusLinnaeus', 'ParocneriaFurva', 'PergesaElpenorlewisi', 'PidorusAtratusButter', 'PierisRapae', 'PlagioderaVersicolora', 'PlatypleuraKaempferi', 'PlinachtusBicoloripesScott', 'PlinachtusDissimilis', 'PolygoniaCaureum', 'PolyuraNarcaeaHewitson', 'PorthesiaSimilis', 'ProdeniaLitura', 'ProtaetiaBrevitarsisLewis', 'PsilogrammaMenephron', 'RicaniaSublimata', 'RiptortusPedestris', 'SemanotusBifasciatusBifasciatus', 'SericinusMontelusGrey', 'SinnaExtrema', 'SmerinthusPlanusWalker', 'SpeiredoniaRetorta', 'SpilarctiaRobusta', 'SpilarctiaSubcarnea', 'StilprotiaSalicis', 'TheretraJaponica', 'ThoseaSinensisWalker', 'UropyiaMeticulodina', 'VanessaIndicaHerbst']
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+rescaling (Rescaling)        (None, 224, 224, 3)       0
+_________________________________________________________________
+mobilenetv2_1.00_224 (Functi (None, 7, 7, 1280)        2257984
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1280)              0
+_________________________________________________________________
+dense (Dense)                (None, 96)                122976
+=================================================================
+Total params: 2,380,960
+Trainable params: 122,976
+Non-trainable params: 2,257,984
+_________________________________________________________________
+Epoch 1/50
+85/85 [==============================] - 27s 315ms/step - loss: 3.4168 - accuracy: 0.2662 - val_loss: 2.0452 - val_accuracy: 0.5333
+Epoch 2/50
+85/85 [==============================] - 26s 308ms/step - loss: 1.0741 - accuracy: 0.7807 - val_loss: 1.4466 - val_accuracy: 0.6556
+Epoch 3/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.5499 - accuracy: 0.9160 - val_loss: 1.2625 - val_accuracy: 0.6944
+Epoch 4/50
+85/85 [==============================] - 26s 310ms/step - loss: 0.3261 - accuracy: 0.9621 - val_loss: 1.1749 - val_accuracy: 0.7167
+Epoch 5/50
+85/85 [==============================] - 27s 313ms/step - loss: 0.2250 - accuracy: 0.9770 - val_loss: 1.1250 - val_accuracy: 0.7194
+Epoch 6/50
+85/85 [==============================] - 27s 313ms/step - loss: 0.1648 - accuracy: 0.9859 - val_loss: 1.0981 - val_accuracy: 0.7333
+Epoch 7/50
+85/85 [==============================] - 27s 313ms/step - loss: 0.1293 - accuracy: 0.9859 - val_loss: 1.0716 - val_accuracy: 0.7500
+Epoch 8/50
+85/85 [==============================] - 26s 310ms/step - loss: 0.1021 - accuracy: 0.9881 - val_loss: 1.0510 - val_accuracy: 0.7472
+Epoch 9/50
+85/85 [==============================] - 26s 308ms/step - loss: 0.0854 - accuracy: 0.9896 - val_loss: 1.0384 - val_accuracy: 0.7500
+Epoch 10/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0746 - accuracy: 0.9903 - val_loss: 1.0260 - val_accuracy: 0.7556
+Epoch 11/50
+85/85 [==============================] - 26s 306ms/step - loss: 0.0646 - accuracy: 0.9911 - val_loss: 1.0233 - val_accuracy: 0.7556
+Epoch 12/50
+85/85 [==============================] - 26s 305ms/step - loss: 0.0594 - accuracy: 0.9911 - val_loss: 1.0192 - val_accuracy: 0.7583
+Epoch 13/50
+85/85 [==============================] - 26s 303ms/step - loss: 0.0554 - accuracy: 0.9903 - val_loss: 1.0099 - val_accuracy: 0.7639
+Epoch 14/50
+85/85 [==============================] - 26s 305ms/step - loss: 0.0474 - accuracy: 0.9926 - val_loss: 1.0094 - val_accuracy: 0.7667
+Epoch 15/50
+85/85 [==============================] - 26s 305ms/step - loss: 0.0444 - accuracy: 0.9933 - val_loss: 1.0056 - val_accuracy: 0.7611
+Epoch 16/50
+85/85 [==============================] - 26s 304ms/step - loss: 0.0418 - accuracy: 0.9918 - val_loss: 1.0057 - val_accuracy: 0.7639
+Epoch 17/50
+85/85 [==============================] - 26s 304ms/step - loss: 0.0381 - accuracy: 0.9933 - val_loss: 1.0055 - val_accuracy: 0.7556
+Epoch 18/50
+85/85 [==============================] - 26s 304ms/step - loss: 0.0360 - accuracy: 0.9926 - val_loss: 1.0062 - val_accuracy: 0.7667
+Epoch 19/50
+85/85 [==============================] - 26s 305ms/step - loss: 0.0345 - accuracy: 0.9926 - val_loss: 1.0074 - val_accuracy: 0.7583
+Epoch 20/50
+85/85 [==============================] - 26s 305ms/step - loss: 0.0323 - accuracy: 0.9941 - val_loss: 1.0064 - val_accuracy: 0.7639
+Epoch 21/50
+85/85 [==============================] - 26s 306ms/step - loss: 0.0316 - accuracy: 0.9933 - val_loss: 1.0021 - val_accuracy: 0.7667
+Epoch 22/50
+85/85 [==============================] - 26s 303ms/step - loss: 0.0306 - accuracy: 0.9926 - val_loss: 1.0026 - val_accuracy: 0.7639
+Epoch 23/50
+85/85 [==============================] - 26s 311ms/step - loss: 0.0292 - accuracy: 0.9933 - val_loss: 1.0030 - val_accuracy: 0.7611
+Epoch 24/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0286 - accuracy: 0.9933 - val_loss: 1.0060 - val_accuracy: 0.7639
+Epoch 25/50
+85/85 [==============================] - 26s 310ms/step - loss: 0.0266 - accuracy: 0.9926 - val_loss: 1.0019 - val_accuracy: 0.7611
+Epoch 26/50
+85/85 [==============================] - 26s 308ms/step - loss: 0.0265 - accuracy: 0.9933 - val_loss: 1.0093 - val_accuracy: 0.7667
+Epoch 27/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0253 - accuracy: 0.9933 - val_loss: 1.0147 - val_accuracy: 0.7583
+Epoch 28/50
+85/85 [==============================] - 26s 308ms/step - loss: 0.0255 - accuracy: 0.9926 - val_loss: 1.0122 - val_accuracy: 0.7639
+Epoch 29/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0260 - accuracy: 0.9926 - val_loss: 1.0030 - val_accuracy: 0.7694
+Epoch 30/50
+85/85 [==============================] - 26s 308ms/step - loss: 0.0219 - accuracy: 0.9941 - val_loss: 1.0103 - val_accuracy: 0.7611
+Epoch 31/50
+85/85 [==============================] - 26s 307ms/step - loss: 0.0245 - accuracy: 0.9926 - val_loss: 1.0056 - val_accuracy: 0.7639
+Epoch 32/50
+85/85 [==============================] - 26s 308ms/step - loss: 0.0252 - accuracy: 0.9926 - val_loss: 1.0066 - val_accuracy: 0.7667
+Epoch 33/50
+85/85 [==============================] - 26s 308ms/step - loss: 0.0206 - accuracy: 0.9933 - val_loss: 1.0056 - val_accuracy: 0.7611
+Epoch 34/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0223 - accuracy: 0.9926 - val_loss: 1.0143 - val_accuracy: 0.7639
+Epoch 35/50
+85/85 [==============================] - 27s 313ms/step - loss: 0.0224 - accuracy: 0.9926 - val_loss: 1.0106 - val_accuracy: 0.7667
+Epoch 36/50
+85/85 [==============================] - 26s 307ms/step - loss: 0.0207 - accuracy: 0.9933 - val_loss: 1.0257 - val_accuracy: 0.7611
+Epoch 37/50
+85/85 [==============================] - 26s 308ms/step - loss: 0.0226 - accuracy: 0.9933 - val_loss: 1.0190 - val_accuracy: 0.7667
+Epoch 38/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0206 - accuracy: 0.9933 - val_loss: 1.0202 - val_accuracy: 0.7639
+Epoch 39/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0233 - accuracy: 0.9926 - val_loss: 1.0155 - val_accuracy: 0.7694
+Epoch 40/50
+85/85 [==============================] - 26s 310ms/step - loss: 0.0228 - accuracy: 0.9926 - val_loss: 1.0164 - val_accuracy: 0.7667
+Epoch 41/50
+85/85 [==============================] - 27s 313ms/step - loss: 0.0207 - accuracy: 0.9926 - val_loss: 1.0248 - val_accuracy: 0.7611
+Epoch 42/50
+85/85 [==============================] - 26s 310ms/step - loss: 0.0210 - accuracy: 0.9926 - val_loss: 1.0264 - val_accuracy: 0.7639
+Epoch 43/50
+85/85 [==============================] - 26s 310ms/step - loss: 0.0201 - accuracy: 0.9933 - val_loss: 1.0268 - val_accuracy: 0.7694
+Epoch 44/50
+85/85 [==============================] - 26s 310ms/step - loss: 0.0198 - accuracy: 0.9933 - val_loss: 1.0280 - val_accuracy: 0.7722
+Epoch 45/50
+85/85 [==============================] - 26s 309ms/step - loss: 0.0167 - accuracy: 0.9941 - val_loss: 1.0316 - val_accuracy: 0.7722
+Epoch 46/50
+85/85 [==============================] - 27s 313ms/step - loss: 0.0173 - accuracy: 0.9941 - val_loss: 1.0380 - val_accuracy: 0.7722
+Epoch 47/50
+85/85 [==============================] - 27s 318ms/step - loss: 0.0196 - accuracy: 0.9933 - val_loss: 1.0410 - val_accuracy: 0.7639
+Epoch 48/50
+85/85 [==============================] - 27s 319ms/step - loss: 0.0191 - accuracy: 0.9941 - val_loss: 1.0447 - val_accuracy: 0.7667
+Epoch 49/50
+85/85 [==============================] - 27s 318ms/step - loss: 0.0192 - accuracy: 0.9933 - val_loss: 1.0369 - val_accuracy: 0.7722
+Epoch 50/50
+85/85 [==============================] - 27s 319ms/step - loss: 0.0210 - accuracy: 0.9933 - val_loss: 1.0468 - val_accuracy: 0.7694
+该循环程序运行时间： 1342.2021644115448 s
+
+Process finished with exit code 0

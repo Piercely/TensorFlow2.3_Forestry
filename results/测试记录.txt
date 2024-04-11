@@ -1,0 +1,45 @@
+D:\Anaconda3\envs\dejahu\python.exe E:/Desktop/vegetables_tf2.3-master/vegetables_tf2.3-master/test_model.py
+Found 1345 files belonging to 96 classes.
+2023-10-03 22:43:38.147714: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-03 22:43:38.154352: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x2088a9981c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-10-03 22:43:38.154487: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Found 360 files belonging to 96 classes.
+23/23 [==============================] - 5s 229ms/step - loss: 1.0468 - accuracy: 0.7694
+Mobilenet test accuracy : 0.769444465637207
+[[5. 0. 0. ... 0. 0. 0.]
+ [0. 6. 0. ... 0. 0. 0.]
+ [0. 0. 2. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 6. 0. 0.]
+ [0. 0. 0. ... 0. 1. 0.]
+ [0. 0. 0. ... 0. 0. 6.]]
+
+[[1.  0.  0.  ... 0.  0.  0. ]
+ [0.  1.  0.  ... 0.  0.  0. ]
+ [0.  0.  1.  ... 0.  0.  0. ]
+ ...
+ [0.  0.  0.  ... 1.  0.  0. ]
+ [0.  0.  0.  ... 0.  0.5 0. ]
+ [0.  0.  0.  ... 0.  0.  1. ]]
+Found 1345 files belonging to 96 classes.
+Found 360 files belonging to 96 classes.
+23/23 [==============================] - 2s 96ms/step - loss: 4.4155 - accuracy: 0.2444
+CNN test accuracy : 0.24444444477558136
+[[3. 1. 0. ... 0. 0. 0.]
+ [2. 1. 0. ... 0. 0. 0.]
+ [0. 0. 1. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 2. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 1. ... 0. 0. 0.]]
+
+[[0.6        0.2        0.         ... 0.         0.         0.        ]
+ [0.33333333 0.16666667 0.         ... 0.         0.         0.        ]
+ [0.         0.         0.5        ... 0.         0.         0.        ]
+ ...
+ [0.         0.         0.         ... 0.33333333 0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.16666667 ... 0.         0.         0.        ]]
+
+Process finished with exit code 0
